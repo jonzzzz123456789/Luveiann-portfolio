@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Posters.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>POSTERS</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../graphicdesign.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../graphicd/carlosyulo.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/archives day.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/indigenuos.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/international youthday.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/national museum.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/naional piece.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/consumers day.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/Soulsday.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/mental day.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/eugenioperez.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../graphicd/family day.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

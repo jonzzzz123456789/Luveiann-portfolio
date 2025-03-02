@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>Gender Responce</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/gender responsive1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive14.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive15.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive16.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/gender responsive17.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

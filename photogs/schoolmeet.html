@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>School Meet</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/photograohy2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/photograohy14.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

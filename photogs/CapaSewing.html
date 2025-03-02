@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>Capability Training For Sewing And Dressing</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing14.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing15.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing16.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing17.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing18.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/CapabilityTrainingForSewingAndDressing19.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

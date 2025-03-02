@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>School Meet</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/zumbasorero1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero14.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero15.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero16.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero17.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero18.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero19.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero20.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero21.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero22.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero23.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero24.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero25.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero26.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero27.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero28.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero29.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero30.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero31.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero32.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero33.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/zumbasorero34.jpg" alt="" onclick="openImage(this, '')">
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

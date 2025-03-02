@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>Retirement</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/retirement program1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program14.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program15.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program16.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program17.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program18.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program19.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program20.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program21.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program22.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program23.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program24.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program25.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program26.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program27.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program28.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program29.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program30.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program31.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program32.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program33.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program34.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program35.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program36.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program37.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program38.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program39.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program40.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program41.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program42.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program43.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program44.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/retirement program45.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>FAMILY FAIR</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/familyfair1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair14.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair15.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair16.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair17.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair18.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/familyfair19.jpg" alt="" onclick="openImage(this, '')">
+        
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

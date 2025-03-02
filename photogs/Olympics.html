@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>Zoom Image with Text Below</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/badmindon.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/badmindon1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/badmindon2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/badmindon3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/basketball13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/olympics11.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

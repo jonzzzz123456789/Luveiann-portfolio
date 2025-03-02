@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    background-color:#171717 ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body{
+
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    width: 100%;
+    background: #171717;
+    color:#dbdad4;
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    backdrop-filter: blur(2px); /* Glass effect */
+   
+}
+.navbar.hidden {
+    top: -60px; /* Moves navbar out of view */
+}
+.back-button {
+    background: none;
+    color: #dbdad4;
+    border: none;
+    padding: 10px 15px;
+    font-size: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.back-button::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.back-button:hover {
+    color: gray;
+}
+
+/* Icon Styling */
+.back-button i {
+    font-size: 25px;
+}
+.header-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+            margin-top: 4%;
+            color: black;
+ }
+ /*------------- option tab ---------------*/
+ #portfolio{
+    padding: 30px 0;
+}
+.portfolio-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 42px;
+    margin-top: 45px;
+}
+.portfolio-list div{
+    background: #4e4d41;
+    padding: 26px;
+    color: #dbdad4;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 335px;
+    height: 200;
+    gap: -25px;
+    margin-left: 4%;
+    margin-right: 6%;
+    background-position: center;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.portfolio-list div i{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.portfolio-list div h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portfolio-list div a{
+    text-decoration: none;
+    color: #dbdad4;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 700;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portfolio-list div p1{
+    font-size: 10px;
+}
+.portfolio-list div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.portfolio-list div:hover{
+    background: gray;
+    transform: translateY(-10px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.4s;
+}
+.btn :hover{
+    background: gold;
+}
+/*------------------------- mobile css ------------------ */
+nav .fa-solid{
+    display: none;
+  }
+@media screen and (max-width:500px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 80px;
+    }
+    .header-text h2{
+        font-size: 50px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 40px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    #header{
+        background-image: url(Images/picture.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h2{
+        font-size: 50px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}

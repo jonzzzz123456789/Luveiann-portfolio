@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>Turn-over</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/turn-over1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over14.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over15.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over16.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over17.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over18.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over19.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over20.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over21.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over22.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over23.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over24.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over25.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over26.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/turn-over27.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

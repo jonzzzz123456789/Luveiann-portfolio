@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Olympics.css"> 
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <title>Leadership and Capability Building</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../photographs.html" class="back-button">
+            <i class="fa-solid fa-arrow-left"></i> Home
+        </a>
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <!-- Image Grid -->
+    <div class="image-grid">
+        <img src="../documentaries/Leadership and Capability Building1.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building2.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building3.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building4.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building5.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building6.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building7.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building8.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building9.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building10.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building11.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building12.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building13.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building14.jpg" alt="" onclick="openImage(this, '')">
+        <img src="../documentaries/Leadership and Capability Building15.jpg" alt="" onclick="openImage(this, '')">
+        
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8fcbacc39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="blog.css">
+    <title>Website with Home & Auto-Download</title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="../System.html" class="back-button">
+            <i class="fa-solid fa-house"></i> Home
+        </a> 
+    </div>
+    <div>
+        <br>
+        <Span></Span>
+    </div>
+    <div class="image-grid">
+        <img src="../System/Blog.png" alt="" onclick="openImage(this, '')">
+        <img src="../System/Blog1.png" alt="" onclick="openImage(this, '')">
+        <img src="../System/blog2.png" alt="" onclick="openImage(this, '')">
+        <img src="../System/blog3.png" alt="" onclick="openImage(this, '')">
+        <img src="../System/Blog00.png" alt="" onclick="openImage(this, '')"> 
+    </div>
+
+    <!-- Fullscreen Overlay -->
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img id="fullImage">
+        <div class="image-text" id="imageText"></div>
+    </div>
+
+    <!-- JavaScript for Click Event -->
+    <script>
+        function openImage(imgElement, text) {
+            document.getElementById("fullImage").src = imgElement.src;
+            document.getElementById("imageText").innerText = text; // Set paragraph text
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+    
+</div>
+</body>
